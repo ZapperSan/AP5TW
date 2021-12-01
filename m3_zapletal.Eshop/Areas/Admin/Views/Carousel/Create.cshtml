@@ -1,0 +1,34 @@
+﻿@using m3_zapletal.Eshop.Areas.Admin.Controllers
+@model CarouselItem
+@{
+    ViewData["Title"] = "Carousel Create";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Today I was driving around in my car. And by car i mean cardboard box with wheels painted on it and I came across an old woman as she was carrying the most beautiful shiny toaster. I stopped my car, uhh cardboard box. I got out and said: "Excuse me miss. But that toaster is... Its marvelous. I was wondering if i can pay you for it." - To be continued...</p>
+
+@{
+    ViewBag.Action = nameof(CarouselController.Create);
+}
+<partial name="CreateEditForm" model="Model">
+
+
+    @*<form asp-action="Create" method="post">
+            <div class="form-group">
+                <label asp-for="ImageSource">Image Source</label>
+                <input asp-for="ImageSource" type="text" class="form-control" placeholder="Enter image source">
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageAlt">Image Alt</label>
+                <input asp-for="ImageAlt" type="text" class="form-control" placeholder="Enter image alt">
+            </div>
+            <button type="submit" class="btn btn-primary">Just do it!</button>
+        </form>*@
+
+
+    @section Scripts
+{
+        <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+        <script src="~/js/FileContentValidation.js"></script>
+    }

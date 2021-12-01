@@ -1,0 +1,50 @@
+﻿@model IList<CarouselItem>
+@{
+    ViewData["Title"] = "Carousel Items";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Today I was driving around in my car. And by car i mean cardboard box with wheels painted on it and I came across an old woman as she was carrying the most beautiful shiny toaster. I stopped my car, uhh cardboard box. I got out and said: "Excuse me miss. But that toaster is... Its marvelous. I was wondering if i can pay you for it." - To be continued...</p>
+
+<a asp-action="Create"> Create new carousel</a>
+
+@{ 
+    if (Model == null)
+            {
+                <p>Carousel is empty!</p>
+            }
+            else
+            {
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Image Source</th>
+                            <th scope="col">Image Alt</th>
+                            <th scope="col">Edit</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            for (int i = 0; i < Model.Count; i++)
+                            {
+                                <tr>
+                                    <th scope="row">@Model[i].ID</th>
+                                    <td>@Model[i].ImageSource</td>
+                                    <td>@Model[i].ImageAlt</td>
+                                    <td><a asp-action="Edit" asp-route-ID="@Model[i].ID" type="button" class="btn btn-primary">Edit</a></td>
+                                    <td><a asp-action="Delete" asp-route-ID="@Model[i].ID" type="button" class="btn btn-danger" onclick="return ConfirmDelete();">Delete</a></td>
+                                </tr>
+                            }
+                        }
+
+                    </tbody>
+                </table>
+            }
+}
+
+@section Scripts
+{
+    <script src="~/js/alerts.js"></script>
+}

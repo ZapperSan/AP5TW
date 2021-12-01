@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewData["Title"] = "Products";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Here, have a product...</p>
+
+@{
+    if (Model == null)
+    {
+        <p>Carousel is empty!</p>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Product name</th>
+                    <th scope="col">Product description</th>
+                    <th scope="col">Product price</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    for (int i = 0; i < Model.Count; i++)
+                    {
+                                <tr>
+                                    <th scope="row">@Model[i].ID</th>
+                                    <td>@Model[i].productName</td>
+                                    <td>@Model[i].productDesc</td>
+                                    <td>@Model[i].productPrice</td>
+                                    <td><a asp-action="Edit" asp-route-ID="@Model[i].ID" type="button" class="btn btn-primary">Edit</a></td>
+                                    <td><a asp-action="Delete" asp-route-ID="@Model[i].ID" type="button" class="btn btn-danger" onclick="return ConfirmDelete();">Delete</a></td>
+                                </tr>
+                    }
+                }
+
+            </tbody>
+        </table>
+    }
+}

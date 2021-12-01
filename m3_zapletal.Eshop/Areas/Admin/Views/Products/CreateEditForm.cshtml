@@ -1,0 +1,28 @@
+﻿@using m3_zapletal.Eshop.Areas.Admin.Controllers
+
+@model Product
+@{
+    if (String.IsNullOrWhiteSpace(ViewBag.Action) == false)
+    {
+    <form asp-action="@ViewBag.Action" method="post" enctype="multipart/form-data">
+        @if (ViewBag.Action == nameof(ProductsController.Edit))
+        {
+            <input asp-for="ID" type="hidden" class="form-control">
+        }
+
+        <div class="form-group">
+            <label asp-for="productName">Product Name</label>
+            <input asp-for="productName" type="text" class="form-control" placeholder="Enter product name">
+        </div>
+        <div class="form-group">
+            <label asp-for="productDesc">Product Description</label>
+            <input asp-for="productDesc" type="text" class="form-control" placeholder="Enter product description">
+        </div>
+        <div class="form-group">
+            <label asp-for="productPrice">Product Price</label>
+            <input asp-for="productPrice" type="text" class="form-control" placeholder="Enter product price">
+        </div>
+        <button type="submit" class="btn btn-primary">Just do it!</button>
+    </form>
+    }
+}

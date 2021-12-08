@@ -7,10 +7,13 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using m3_zapletal.Eshop.Areas.Admin.Models.Database;
 using m3_zapletal.Eshop.Models.Entity;
+using Microsoft.AspNetCore.Authorization;
+using m3_zapletal.Eshop.Models.Identity;
 
 namespace m3_zapletal.Eshop.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = nameof(Roles.Admin) + " , " + nameof(Roles.Manager))]
     public class OrdersController : Controller
     {
         private readonly EshopDbContext _context;

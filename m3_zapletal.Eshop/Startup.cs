@@ -62,6 +62,25 @@ namespace m3_zapletal.Eshop
 
 
             services.AddScoped<ISecurityApplicationService, SecurityIdentityApplicationService>();
+
+            services.AddDistributedMemoryCache(); // Adds a default in-memory implementation of IDistributedCache
+
+            services.AddSession(options =>
+
+            {
+
+                // Set a short timeout for easy testing.
+
+                options.IdleTimeout = TimeSpan.FromMinutes(30);
+
+                options.Cookie.HttpOnly = true;
+
+                // Make the session cookie essential
+
+                options.Cookie.IsEssential = true;
+
+            });
+
             services.AddControllersWithViews();
         }
 
@@ -82,6 +101,8 @@ namespace m3_zapletal.Eshop
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            app.UseSession();
 
             app.UseRouting();
             app.UseAuthentication();

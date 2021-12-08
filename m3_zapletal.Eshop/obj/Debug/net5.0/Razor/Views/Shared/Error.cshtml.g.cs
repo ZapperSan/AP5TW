@@ -40,8 +40,29 @@ using m3_zapletal.Eshop.Models.Identity;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\Users\m3_zapletal\source\repos\m3_zapletal.Eshop\m3_zapletal.Eshop\Views\_ViewImports.cshtml"
+using m3_zapletal.Eshop.Models.Database;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "C:\Users\m3_zapletal\source\repos\m3_zapletal.Eshop\m3_zapletal.Eshop\Views\_ViewImports.cshtml"
+using m3_zapletal.Eshop.Areas.Admin.Models.Database.Entity;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 7 "C:\Users\m3_zapletal\source\repos\m3_zapletal.Eshop\m3_zapletal.Eshop\Views\_ViewImports.cshtml"
+using m3_zapletal.Eshop.Areas.Admin.Models.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d6a5625cc8fb4476f348b0fe9041c550465d8bf9", @"/Views/Shared/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"42f2e7a0e1c402eaffedcc95e1f7f245cb78f2c1", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8e220f70f8b12bab96dd65e047ca3aa764f89983", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Error : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ErrorViewModel>
     {
         #pragma warning disable 1998

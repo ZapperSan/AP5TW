@@ -1,4 +1,6 @@
-﻿using m3_zapletal.Eshop.Models;
+﻿using m3_zapletal.Eshop.Areas.Admin.Models.Database;
+using m3_zapletal.Eshop.Areas.Admin.Models.ViewModels;
+using m3_zapletal.Eshop.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -12,15 +14,21 @@ namespace m3_zapletal.Eshop.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        readonly EshopDbContext eshopDbContext;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, EshopDbContext eshopDB)
         {
             _logger = logger;
+            eshopDbContext = eshopDB;
         }
 
         public IActionResult Index()
         {
-            return View();
+            IndexViewModel indexViewModel = new IndexViewModel();
+            indexViewModel.CarouselItems = eshopDbContext.CarouselItem.ToList();
+            indexViewModel.Products = eshopDbContext.Products.ToList();
+
+            return View(indexViewModel);
         }
 
         public IActionResult Privacy()

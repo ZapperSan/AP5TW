@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Vogeltanz.Eshop.Web.Areas.Security.Controllers
+namespace m3_zapletal.Eshop.Areas.Security.Controllers
 {
     [Area("Security")]
     public class AccountController : Controller

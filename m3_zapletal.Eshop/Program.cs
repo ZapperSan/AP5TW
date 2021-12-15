@@ -21,7 +21,7 @@ namespace m3_zapletal.Eshop
 
             using (var scope = host.Services.CreateScope())
             {
-                if(scope.ServiceProvider.GetRequiredService<IWebHostEnvironment>().IsDevelopment())
+                if (scope.ServiceProvider.GetRequiredService<IWebHostEnvironment>().IsDevelopment())
                 {
                     var dbContext = scope.ServiceProvider.GetRequiredService<EshopDbContext>();
 
@@ -56,6 +56,14 @@ namespace m3_zapletal.Eshop
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                });
+                })
+                .ConfigureLogging(loggingBuilder =>
+                 {
+                     loggingBuilder.ClearProviders();
+                     loggingBuilder.AddConsole();
+                     loggingBuilder.AddDebug();
+                     loggingBuilder.AddFile("logs/eshop-log-{Date}.txt");
+
+                 });
     }
 }

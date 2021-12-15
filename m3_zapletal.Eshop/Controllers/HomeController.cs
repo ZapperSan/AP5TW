@@ -24,6 +24,8 @@ namespace m3_zapletal.Eshop.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogInformation("Byla zobrazena hlavni stranka");
+
             IndexViewModel indexViewModel = new IndexViewModel();
             indexViewModel.CarouselItems = eshopDbContext.CarouselItem.ToList();
             indexViewModel.Products = eshopDbContext.Products.ToList();

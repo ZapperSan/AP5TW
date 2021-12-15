@@ -187,3 +187,10 @@ C:\Users\m3_zapletal\source\repos\m3_zapletal.Eshop\m3_zapletal.Eshop\obj\Debug\
 C:\Users\m3_zapletal\source\repos\m3_zapletal.Eshop\m3_zapletal.Eshop\obj\Debug\net5.0\Razor\Areas\Customer\Views\CustomerOrders\Index.cshtml.g.cs
 C:\Users\m3_zapletal\source\repos\m3_zapletal.Eshop\m3_zapletal.Eshop\obj\Debug\net5.0\Razor\Areas\Customer\Views\_ViewImports.cshtml.g.cs
 C:\Users\m3_zapletal\source\repos\m3_zapletal.Eshop\m3_zapletal.Eshop\obj\Debug\net5.0\Razor\Areas\Customer\Views\_ViewStart.cshtml.g.cs
+C:\Users\m3_zapletal\source\repos\m3_zapletal.Eshop\m3_zapletal.Eshop\bin\Debug\net5.0\Serilog.dll
+C:\Users\m3_zapletal\source\repos\m3_zapletal.Eshop\m3_zapletal.Eshop\bin\Debug\net5.0\Serilog.Extensions.Logging.dll
+C:\Users\m3_zapletal\source\repos\m3_zapletal.Eshop\m3_zapletal.Eshop\bin\Debug\net5.0\Serilog.Extensions.Logging.File.dll
+C:\Users\m3_zapletal\source\repos\m3_zapletal.Eshop\m3_zapletal.Eshop\bin\Debug\net5.0\Serilog.Formatting.Compact.dll
+C:\Users\m3_zapletal\source\repos\m3_zapletal.Eshop\m3_zapletal.Eshop\bin\Debug\net5.0\Serilog.Sinks.Async.dll
+C:\Users\m3_zapletal\source\repos\m3_zapletal.Eshop\m3_zapletal.Eshop\bin\Debug\net5.0\Serilog.Sinks.File.dll
+C:\Users\m3_zapletal\source\repos\m3_zapletal.Eshop\m3_zapletal.Eshop\bin\Debug\net5.0\Serilog.Sinks.RollingFile.dll

@@ -1,25 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\m3_zapletal\\source\\repos\\m3_zapletal.Eshop\\m3_zapletal.Eshop.Tests\\m3_zapletal.Eshop.Tests.csproj": {}
+    "C:\\Users\\micha\\Desktop\\SchoolFolder\\AP5PW\\AP5TW\\m3_zapletal.Eshop.Tests\\m3_zapletal.Eshop.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\m3_zapletal\\source\\repos\\m3_zapletal.Eshop\\m3_zapletal.Eshop.Tests\\m3_zapletal.Eshop.Tests.csproj": {
+    "C:\\Users\\micha\\Desktop\\SchoolFolder\\AP5PW\\AP5TW\\m3_zapletal.Eshop.Tests\\m3_zapletal.Eshop.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\m3_zapletal\\source\\repos\\m3_zapletal.Eshop\\m3_zapletal.Eshop.Tests\\m3_zapletal.Eshop.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\micha\\Desktop\\SchoolFolder\\AP5PW\\AP5TW\\m3_zapletal.Eshop.Tests\\m3_zapletal.Eshop.Tests.csproj",
         "projectName": "m3_zapletal.Eshop.Tests",
-        "projectPath": "C:\\Users\\m3_zapletal\\source\\repos\\m3_zapletal.Eshop\\m3_zapletal.Eshop.Tests\\m3_zapletal.Eshop.Tests.csproj",
-        "packagesPath": "C:\\Users\\m3_zapletal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\m3_zapletal\\source\\repos\\m3_zapletal.Eshop\\m3_zapletal.Eshop.Tests\\obj\\",
+        "projectPath": "C:\\Users\\micha\\Desktop\\SchoolFolder\\AP5PW\\AP5TW\\m3_zapletal.Eshop.Tests\\m3_zapletal.Eshop.Tests.csproj",
+        "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\micha\\Desktop\\SchoolFolder\\AP5PW\\AP5TW\\m3_zapletal.Eshop.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\m3_zapletal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -32,8 +32,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\m3_zapletal\\source\\repos\\m3_zapletal.Eshop\\m3_zapletal.Eshop\\m3_zapletal.Eshop.csproj": {
-                "projectPath": "C:\\Users\\m3_zapletal\\source\\repos\\m3_zapletal.Eshop\\m3_zapletal.Eshop\\m3_zapletal.Eshop.csproj"
+              "C:\\Users\\micha\\Desktop\\SchoolFolder\\AP5PW\\AP5TW\\m3_zapletal.Eshop\\m3_zapletal.Eshop.csproj": {
+                "projectPath": "C:\\Users\\micha\\Desktop\\SchoolFolder\\AP5PW\\AP5TW\\m3_zapletal.Eshop\\m3_zapletal.Eshop.csproj"
               }
             }
           }
@@ -92,26 +92,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\m3_zapletal\\source\\repos\\m3_zapletal.Eshop\\m3_zapletal.Eshop\\m3_zapletal.Eshop.csproj": {
+    "C:\\Users\\micha\\Desktop\\SchoolFolder\\AP5PW\\AP5TW\\m3_zapletal.Eshop\\m3_zapletal.Eshop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\m3_zapletal\\source\\repos\\m3_zapletal.Eshop\\m3_zapletal.Eshop\\m3_zapletal.Eshop.csproj",
+        "projectUniqueName": "C:\\Users\\micha\\Desktop\\SchoolFolder\\AP5PW\\AP5TW\\m3_zapletal.Eshop\\m3_zapletal.Eshop.csproj",
         "projectName": "m3_zapletal.Eshop",
-        "projectPath": "C:\\Users\\m3_zapletal\\source\\repos\\m3_zapletal.Eshop\\m3_zapletal.Eshop\\m3_zapletal.Eshop.csproj",
-        "packagesPath": "C:\\Users\\m3_zapletal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\m3_zapletal\\source\\repos\\m3_zapletal.Eshop\\m3_zapletal.Eshop\\obj\\",
+        "projectPath": "C:\\Users\\micha\\Desktop\\SchoolFolder\\AP5PW\\AP5TW\\m3_zapletal.Eshop\\m3_zapletal.Eshop.csproj",
+        "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\micha\\Desktop\\SchoolFolder\\AP5PW\\AP5TW\\m3_zapletal.Eshop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\m3_zapletal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -158,6 +158,10 @@
               "target": "Package",
               "version": "[5.0.2, )"
             },
+            "PagedList.Mvc": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[5.0.3, )"
@@ -185,7 +189,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }

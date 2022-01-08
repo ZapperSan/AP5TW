@@ -24,5 +24,13 @@ namespace m3_zapletal.Eshop.Areas.Admin.Models.Database.Entity
 
         [Required]
         public int productPrice { get; set; }
+
+        [StringLength(50)]
+        [Required]
+        public string productCategory { get; set; }
+
+        [StringLength(255)]
+        [Required]
+        public string productImage { get; set; }
     }
 }

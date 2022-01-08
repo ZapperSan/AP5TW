@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using PagedList;
 
 namespace m3_zapletal.Eshop.Controllers
 {
@@ -22,8 +23,9 @@ namespace m3_zapletal.Eshop.Controllers
             eshopDbContext = eshopDB;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string category, int? page)
         {
+            /*
             _logger.LogInformation("Byla zobrazena hlavni stranka");
 
             IndexViewModel indexViewModel = new IndexViewModel();
@@ -31,6 +33,16 @@ namespace m3_zapletal.Eshop.Controllers
             indexViewModel.Products = eshopDbContext.Products.ToList();
 
             return View(indexViewModel);
+            */
+            var products = from s in eshopDbContext.Products
+                           select s;
+            if (!String.IsNullOrEmpty(category))
+            {
+                products = products.Where(s => s.productCategory.Equals(category));
+            }
+            int pageSize = 4;
+            int pageNumber = (page ?? 1);
+            return View(products.ToPagedList(pageNumber, pageSize));
         }
 
         public IActionResult Privacy()

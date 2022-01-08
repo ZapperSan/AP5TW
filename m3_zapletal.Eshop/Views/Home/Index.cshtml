@@ -1,4 +1,6 @@
-﻿@model IndexViewModel
+﻿@model PagedList.IPagedList<Product>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -10,33 +12,44 @@
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
 </div>
+<div class="container px-4 px-lg-5 mt-5">
+    <form asp-action="Index" method="get">
+        <div class="form-actions no-color">
+            <p>
+                Find by name: <input type="text" name="category" value="@ViewData["category"]" />
+                <input type="submit" value="Search" class="btn btn-default" /> |
+                <a asp-action="Index">Reset category</a>
+            </p>
+        </div>
+    </form>
+</div>
 
 <section class="py-5">
     <div class="container px-4 px-lg-5 mt-5">
         <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-start">
             @{
-                foreach (var a in Model.Products)
+                foreach (var a in Model)
                 {
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                             <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <img class="card-img-top" src=@a.productImage alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
                                     <h5 class="fw-bolder">@a.productName</h5>
                                     <!-- Product price-->
-                                    @a.productPrice
+                                    Price: @a.productPrice<br>
+                                    Category: @a.productCategory
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <div class="text-center">
                                     <a class="btn btn-outline-dark mt-auto"
-                                       onclick="Buy(@a.ID,'@Url.Action("AddOrderItemsToSession", "CustomerOrderNotCart", new { Area = "Customer" })', '#total_price', '@System.Globalization.CultureInfo.CurrentCulture.Name')">
+                                        onclick="Buy(@a.ID,'@Url.Action("AddOrderItemsToSession", "CustomerOrderNotCart", new { Area = "Customer" })', '#total_price', '@System.Globalization.CultureInfo.CurrentCulture.Name')">
                                         Get to Cart
                                     </a>
                                 </div>
@@ -45,11 +58,28 @@
                     </div>
                 }
             }
-            </div>
         </div>
+        <div class="text-center">
+            @{
+                var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+                var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+            }
+            <a asp-action="Index"
+                asp-route-page="@(Model.PageNumber - 1)"
+                asp-route-category="@ViewData["category"]"
+                class="btn btn-default @prevDisabled">
+                Previous
+            </a>
+            Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+            <a asp-action="Index"
+                asp-route-page="@(Model.PageNumber + 1)"
+                asp-route-category="@ViewData["category"]"
+                class="btn btn-default @nextDisabled">
+                Next
+            </a>
+        </div>
+    </div>
 </section>
-
-
 
 
     @section Scripts

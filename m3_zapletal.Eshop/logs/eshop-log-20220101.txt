@@ -1,0 +1,4 @@
+2022-01-01T15:36:46.7743796+01:00  [INF] Entity Framework Core "5.0.12" initialized '"EshopDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "ServerVersion 8.0.26-mysql " (9958f5bb)
+2022-01-01T15:36:50.9572311+01:00  [ERR] An error occurred using the connection to database '""' on server '"localhost"'. (5fc3407c)
+2022-01-01T15:54:37.1409407+01:00  [INF] Entity Framework Core "5.0.12" initialized '"EshopDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "ServerVersion 8.0.26-mysql " (9958f5bb)
+2022-01-01T15:54:41.2881782+01:00  [ERR] An error occurred using the connection to database '""' on server '"localhost"'. (5fc3407c)

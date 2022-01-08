@@ -1321,6 +1321,27 @@
           "lib/netstandard2.0/NuGet.Frameworks.dll": {}
         }
       },
+      "PagedList/1.17.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/PagedList.dll": {}
+        },
+        "runtime": {
+          "lib/net40/PagedList.dll": {}
+        }
+      },
+      "PagedList.Mvc/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "PagedList": "1.17.0"
+        },
+        "compile": {
+          "lib/net40/PagedList.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net40/PagedList.Mvc.dll": {}
+        }
+      },
       "Pomelo.EntityFrameworkCore.MySql/5.0.3": {
         "type": "package",
         "dependencies": {
@@ -3292,6 +3313,7 @@
           "Microsoft.EntityFrameworkCore": "5.0.12",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.12",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
+          "PagedList.Mvc": "4.5.0",
           "Pomelo.EntityFrameworkCore.MySql": "5.0.3",
           "Serilog.Extensions.Logging.File": "2.0.0"
         },
@@ -5627,6 +5649,33 @@
         "lib/netstandard2.0/NuGet.Frameworks.xml",
         "nuget.frameworks.5.0.0.nupkg.sha512",
         "nuget.frameworks.nuspec"
+      ]
+    },
+    "PagedList/1.17.0": {
+      "sha512": "Ou6F3WKXh49hOo0TxWM+SkIGuKllYPuPPvnSYOlQ1sTrtuEyuDUhYbSJd5Sdb06i/sWUJZTjiUecEs3Ht/Hx3g==",
+      "type": "package",
+      "path": "pagedlist/1.17.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/PagedList.dll",
+        "lib/net40/PagedList.xml",
+        "pagedlist.1.17.0.nupkg.sha512",
+        "pagedlist.nuspec"
+      ]
+    },
+    "PagedList.Mvc/4.5.0": {
+      "sha512": "D0M4qW2g4a9cwG8ozIKUnJheCrm5GpFTceqUl63AXWaAVnTgk+TysZYUOGMsBRuzid8aF+/E8b0bXM6+90jiEw==",
+      "type": "package",
+      "path": "pagedlist.mvc/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Content/PagedList.css",
+        "lib/net40/PagedList.Mvc.XML",
+        "lib/net40/PagedList.Mvc.dll",
+        "pagedlist.mvc.4.5.0.nupkg.sha512",
+        "pagedlist.mvc.nuspec"
       ]
     },
     "Pomelo.EntityFrameworkCore.MySql/5.0.3": {
@@ -10538,25 +10587,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\m3_zapletal\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\micha\\.nuget\\packages\\": {},
+    "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\m3_zapletal\\source\\repos\\m3_zapletal.Eshop\\m3_zapletal.Eshop.Tests\\m3_zapletal.Eshop.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\micha\\Desktop\\SchoolFolder\\AP5PW\\AP5TW\\m3_zapletal.Eshop.Tests\\m3_zapletal.Eshop.Tests.csproj",
       "projectName": "m3_zapletal.Eshop.Tests",
-      "projectPath": "C:\\Users\\m3_zapletal\\source\\repos\\m3_zapletal.Eshop\\m3_zapletal.Eshop.Tests\\m3_zapletal.Eshop.Tests.csproj",
-      "packagesPath": "C:\\Users\\m3_zapletal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\m3_zapletal\\source\\repos\\m3_zapletal.Eshop\\m3_zapletal.Eshop.Tests\\obj\\",
+      "projectPath": "C:\\Users\\micha\\Desktop\\SchoolFolder\\AP5PW\\AP5TW\\m3_zapletal.Eshop.Tests\\m3_zapletal.Eshop.Tests.csproj",
+      "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\micha\\Desktop\\SchoolFolder\\AP5PW\\AP5TW\\m3_zapletal.Eshop.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\m3_zapletal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -10569,8 +10618,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\m3_zapletal\\source\\repos\\m3_zapletal.Eshop\\m3_zapletal.Eshop\\m3_zapletal.Eshop.csproj": {
-              "projectPath": "C:\\Users\\m3_zapletal\\source\\repos\\m3_zapletal.Eshop\\m3_zapletal.Eshop\\m3_zapletal.Eshop.csproj"
+            "C:\\Users\\micha\\Desktop\\SchoolFolder\\AP5PW\\AP5TW\\m3_zapletal.Eshop\\m3_zapletal.Eshop.csproj": {
+              "projectPath": "C:\\Users\\micha\\Desktop\\SchoolFolder\\AP5PW\\AP5TW\\m3_zapletal.Eshop\\m3_zapletal.Eshop.csproj"
             }
           }
         }
@@ -10629,8 +10678,30 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'PagedList 1.17.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "PagedList",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'PagedList.Mvc 4.5.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "PagedList.Mvc",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

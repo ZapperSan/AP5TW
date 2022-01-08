@@ -1,0 +1,396 @@
+2022-01-08T13:57:13.3291655+01:00  [INF] Entity Framework Core "5.0.12" initialized '"EshopDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "ServerVersion 8.0.26-mysql " (9958f5bb)
+2022-01-08T13:57:13.7275083+01:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM information_schema.tables
+WHERE table_type = 'BASE TABLE' AND table_schema = 'UTB.Shop'" (0723d8ff)
+2022-01-08T13:57:13.9026437+01:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM `CarouselItem` AS `c`" (0723d8ff)
+2022-01-08T13:57:13.9100005+01:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM `Product` AS `p`" (0723d8ff)
+2022-01-08T13:57:14.0492233+01:00  [INF] Executed DbCommand ("20"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Roles` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1" (0723d8ff)
+2022-01-08T13:57:14.1086625+01:00  [WRN] Role "(null)" validation failed: "DuplicateRoleName". (60d773c7)
+2022-01-08T13:57:14.1287124+01:00  [INF] Executed DbCommand ("6"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Roles` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1" (0723d8ff)
+2022-01-08T13:57:14.1337128+01:00  [WRN] Role "(null)" validation failed: "DuplicateRoleName". (60d773c7)
+2022-01-08T13:57:14.1411131+01:00  [INF] Executed DbCommand ("5"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `Roles` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1" (0723d8ff)
+2022-01-08T13:57:14.1428512+01:00  [WRN] Role "(null)" validation failed: "DuplicateRoleName". (60d773c7)
+2022-01-08T13:57:14.1864048+01:00  [INF] User profile is available. Using '"C:\Users\micha\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2022-01-08T13:57:14.1991591+01:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `u`.`Id`, `u`.`AccessFailedCount`, `u`.`ConcurrencyStamp`, `u`.`Email`, `u`.`EmailConfirmed`, `u`.`FirstName`, `u`.`LastName`, `u`.`LockoutEnabled`, `u`.`LockoutEnd`, `u`.`NormalizedEmail`, `u`.`NormalizedUserName`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`PhoneNumberConfirmed`, `u`.`SecurityStamp`, `u`.`TwoFactorEnabled`, `u`.`UserName`
+FROM `Users` AS `u`
+WHERE `u`.`NormalizedUserName` = @__normalizedUserName_0
+LIMIT 1" (0723d8ff)
+2022-01-08T13:57:14.2424458+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `u`.`Id`, `u`.`AccessFailedCount`, `u`.`ConcurrencyStamp`, `u`.`Email`, `u`.`EmailConfirmed`, `u`.`FirstName`, `u`.`LastName`, `u`.`LockoutEnabled`, `u`.`LockoutEnd`, `u`.`NormalizedEmail`, `u`.`NormalizedUserName`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`PhoneNumberConfirmed`, `u`.`SecurityStamp`, `u`.`TwoFactorEnabled`, `u`.`UserName`
+FROM `Users` AS `u`
+WHERE `u`.`NormalizedUserName` = @__normalizedUserName_0
+LIMIT 1" (0723d8ff)
+2022-01-08T13:57:14.4640230+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-01-08T13:57:14.4655895+01:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-01-08T13:57:14.4669809+01:00  [INF] Content root path: "C:\Users\micha\Desktop\SchoolFolder\AP5PW\AP5TW\m3_zapletal.Eshop" (b5d60022)
+2022-01-08T13:57:14.4990467+01:00 80000034-0001-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/ - - (ca22a1cb)
+2022-01-08T13:57:14.5478415+01:00 80000034-0001-ff00-b63f-84710c7967bb [INF] Executing endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (500cc934)
+2022-01-08T13:57:14.5692037+01:00 80000034-0001-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(System.String, System.Nullable`1[System.Int32])" on controller "m3_zapletal.Eshop.Controllers.HomeController" ("m3_zapletal.Eshop"). (122b2fdf)
+2022-01-08T13:57:14.6296629+01:00 80000034-0001-ff00-b63f-84710c7967bb [INF] Entity Framework Core "5.0.12" initialized '"EshopDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "ServerVersion 8.0.26-mysql " (9958f5bb)
+2022-01-08T13:57:14.6400276+01:00 80000034-0001-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM `Product` AS `p`" (0723d8ff)
+2022-01-08T13:57:14.6497049+01:00 80000034-0001-ff00-b63f-84710c7967bb [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. (96eb03fe)
+2022-01-08T13:57:14.6522219+01:00 80000034-0001-ff00-b63f-84710c7967bb [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. (96eb03fe)
+2022-01-08T13:57:14.6600430+01:00 80000034-0001-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `p`.`ID`, `p`.`productCategory`, `p`.`productDesc`, `p`.`productImage`, `p`.`productName`, `p`.`productPrice`
+FROM `Product` AS `p`
+LIMIT @__p_1 OFFSET @__p_0" (0723d8ff)
+2022-01-08T13:57:14.6846870+01:00 80000034-0001-ff00-b63f-84710c7967bb [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2022-01-08T13:57:14.7746142+01:00 80000034-0001-ff00-b63f-84710c7967bb [INF] Accessing expired session, Key:"3435c0a3-487b-a099-a169-39ad568b3cd8" (08c5a9e7)
+2022-01-08T13:57:14.8070376+01:00 80000034-0001-ff00-b63f-84710c7967bb [INF] Executed ViewResult - view "Index" executed in 121.885ms. (f66409e9)
+2022-01-08T13:57:14.8083743+01:00 80000034-0001-ff00-b63f-84710c7967bb [INF] Executed action "m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)" in 238.5467ms (afa2e885)
+2022-01-08T13:57:14.8089982+01:00 80000034-0001-ff00-b63f-84710c7967bb [INF] Executed endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (99874f2b)
+2022-01-08T13:57:14.8207629+01:00 80000034-0001-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/ - - - 200 - text/html;+charset=utf-8 323.3550ms (791a596a)
+2022-01-08T13:57:14.8410987+01:00 8000000c-0005-fc00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/css/shop_homepage.css - - (ca22a1cb)
+2022-01-08T13:57:14.8410960+01:00 80000052-0006-fc00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/lib/bootstrap/dist/css/bootstrap.min.css - - (ca22a1cb)
+2022-01-08T13:57:14.8411064+01:00 80000025-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/css/site.css - - (ca22a1cb)
+2022-01-08T13:57:14.8416863+01:00 8000001a-0000-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/Content/PagedList.css - - (ca22a1cb)
+2022-01-08T13:57:14.8431916+01:00 80000037-0007-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - (ca22a1cb)
+2022-01-08T13:57:14.8489458+01:00 8000006f-0004-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/js/Product.js - - (ca22a1cb)
+2022-01-08T13:57:14.8546342+01:00 80000035-0003-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/lib/jquery/dist/jquery.min.js - - (ca22a1cb)
+2022-01-08T13:57:14.8547511+01:00 80000008-0000-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - (ca22a1cb)
+2022-01-08T13:57:14.8593674+01:00 80000008-0000-fe00-b63f-84710c7967bb [INF] The file "/lib/bootstrap/dist/js/bootstrap.bundle.min.js" was not modified (f1f8d725)
+2022-01-08T13:57:14.8594308+01:00 80000035-0003-fe00-b63f-84710c7967bb [INF] The file "/lib/jquery/dist/jquery.min.js" was not modified (f1f8d725)
+2022-01-08T13:57:14.8670010+01:00 80000035-0003-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/lib/jquery/dist/jquery.min.js - - - 304 - application/javascript 12.3325ms (791a596a)
+2022-01-08T13:57:14.8670142+01:00 8000001a-0000-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/Content/PagedList.css - - - 404 - - 25.2911ms (791a596a)
+2022-01-08T13:57:14.8670185+01:00 80000008-0000-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 304 - application/javascript 12.3229ms (791a596a)
+2022-01-08T13:57:14.8755848+01:00 80000025-0002-ff00-b63f-84710c7967bb [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"C:\Users\micha\Desktop\SchoolFolder\AP5PW\AP5TW\m3_zapletal.Eshop\wwwroot\css\site.css"' (27b0a520)
+2022-01-08T13:57:14.8755954+01:00 8000006f-0004-fe00-b63f-84710c7967bb [INF] Sending file. Request path: '"/js/Product.js"'. Physical path: '"C:\Users\micha\Desktop\SchoolFolder\AP5PW\AP5TW\m3_zapletal.Eshop\wwwroot\js\Product.js"' (27b0a520)
+2022-01-08T13:57:14.8758177+01:00 80000037-0007-ff00-b63f-84710c7967bb [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"C:\Users\micha\Desktop\SchoolFolder\AP5PW\AP5TW\m3_zapletal.Eshop\wwwroot\js\site.js"' (27b0a520)
+2022-01-08T13:57:14.8761848+01:00 8000006f-0004-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/js/Product.js - - - 200 766 application/javascript 27.2432ms (791a596a)
+2022-01-08T13:57:14.8762021+01:00 80000025-0002-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/css/site.css - - - 200 2526 text/css 35.0731ms (791a596a)
+2022-01-08T13:57:14.8762303+01:00 80000037-0007-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 34.2056ms (791a596a)
+2022-01-08T13:57:14.8818060+01:00 80000052-0006-fc00-b63f-84710c7967bb [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"C:\Users\micha\Desktop\SchoolFolder\AP5PW\AP5TW\m3_zapletal.Eshop\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css"' (27b0a520)
+2022-01-08T13:57:14.8866544+01:00 80000052-0006-fc00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155764 text/css 45.5637ms (791a596a)
+2022-01-08T13:57:14.8889977+01:00 8000000c-0005-fc00-b63f-84710c7967bb [INF] Sending file. Request path: '"/css/shop_homepage.css"'. Physical path: '"C:\Users\micha\Desktop\SchoolFolder\AP5PW\AP5TW\m3_zapletal.Eshop\wwwroot\css\shop_homepage.css"' (27b0a520)
+2022-01-08T13:57:14.8919170+01:00 8000000c-0005-fc00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/css/shop_homepage.css - - - 200 217835 text/css 50.6441ms (791a596a)
+2022-01-08T13:57:14.9346472+01:00 80000039-0007-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/favicon.ico - - (ca22a1cb)
+2022-01-08T13:57:14.9400272+01:00 80000039-0007-ff00-b63f-84710c7967bb [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\Users\micha\Desktop\SchoolFolder\AP5PW\AP5TW\m3_zapletal.Eshop\wwwroot\favicon.ico"' (27b0a520)
+2022-01-08T13:57:14.9401648+01:00 80000039-0007-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/favicon.ico - - - 0 5430 image/x-icon 5.5494ms (791a596a)
+2022-01-08T13:57:40.7633236+01:00 80000027-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/?page=2 - - (ca22a1cb)
+2022-01-08T13:57:40.7649807+01:00 80000027-0002-ff00-b63f-84710c7967bb [INF] Executing endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (500cc934)
+2022-01-08T13:57:40.7653573+01:00 80000027-0002-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(System.String, System.Nullable`1[System.Int32])" on controller "m3_zapletal.Eshop.Controllers.HomeController" ("m3_zapletal.Eshop"). (122b2fdf)
+2022-01-08T13:57:40.8017028+01:00 80000027-0002-ff00-b63f-84710c7967bb [INF] Entity Framework Core "5.0.12" initialized '"EshopDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "ServerVersion 8.0.26-mysql " (9958f5bb)
+2022-01-08T13:57:40.8045339+01:00 80000027-0002-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM `Product` AS `p`" (0723d8ff)
+2022-01-08T13:57:40.8074303+01:00 80000027-0002-ff00-b63f-84710c7967bb [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. (96eb03fe)
+2022-01-08T13:57:40.8102042+01:00 80000027-0002-ff00-b63f-84710c7967bb [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. (96eb03fe)
+2022-01-08T13:57:40.8162646+01:00 80000027-0002-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `p`.`ID`, `p`.`productCategory`, `p`.`productDesc`, `p`.`productImage`, `p`.`productName`, `p`.`productPrice`
+FROM `Product` AS `p`
+LIMIT @__p_0 OFFSET @__p_0" (0723d8ff)
+2022-01-08T13:57:40.8169413+01:00 80000027-0002-ff00-b63f-84710c7967bb [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2022-01-08T13:57:40.8194048+01:00 80000027-0002-ff00-b63f-84710c7967bb [INF] Accessing expired session, Key:"3435c0a3-487b-a099-a169-39ad568b3cd8" (08c5a9e7)
+2022-01-08T13:57:40.8207755+01:00 80000027-0002-ff00-b63f-84710c7967bb [INF] Executed ViewResult - view "Index" executed in 3.9389ms. (f66409e9)
+2022-01-08T13:57:40.8219259+01:00 80000027-0002-ff00-b63f-84710c7967bb [INF] Executed action "m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)" in 56.4927ms (afa2e885)
+2022-01-08T13:57:40.8220182+01:00 80000027-0002-ff00-b63f-84710c7967bb [INF] Executed endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (99874f2b)
+2022-01-08T13:57:40.8310860+01:00 80000027-0002-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/?page=2 - - - 200 - text/html;+charset=utf-8 67.7688ms (791a596a)
+2022-01-08T13:57:40.8693241+01:00 80000071-0004-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/Content/PagedList.css - - (ca22a1cb)
+2022-01-08T13:57:40.8716183+01:00 80000071-0004-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/Content/PagedList.css - - - 404 - - 2.2354ms (791a596a)
+2022-01-08T13:57:40.8739724+01:00 80000073-0004-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - (ca22a1cb)
+2022-01-08T13:57:40.8741630+01:00 80000054-0006-fc00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/js/Product.js - - (ca22a1cb)
+2022-01-08T13:57:40.8790615+01:00 80000054-0006-fc00-b63f-84710c7967bb [INF] Sending file. Request path: '"/js/Product.js"'. Physical path: '"C:\Users\micha\Desktop\SchoolFolder\AP5PW\AP5TW\m3_zapletal.Eshop\wwwroot\js\Product.js"' (27b0a520)
+2022-01-08T13:57:40.8792646+01:00 80000054-0006-fc00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/js/Product.js - - - 0 766 application/javascript 5.0172ms (791a596a)
+2022-01-08T13:57:40.8794653+01:00 80000073-0004-fe00-b63f-84710c7967bb [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"C:\Users\micha\Desktop\SchoolFolder\AP5PW\AP5TW\m3_zapletal.Eshop\wwwroot\js\site.js"' (27b0a520)
+2022-01-08T13:57:40.8796151+01:00 80000073-0004-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 0 230 application/javascript 5.6600ms (791a596a)
+2022-01-08T13:57:41.4032568+01:00 8000000a-0000-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/?page=3 - - (ca22a1cb)
+2022-01-08T13:57:41.4035160+01:00 8000000a-0000-fe00-b63f-84710c7967bb [INF] Executing endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (500cc934)
+2022-01-08T13:57:41.4036140+01:00 8000000a-0000-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(System.String, System.Nullable`1[System.Int32])" on controller "m3_zapletal.Eshop.Controllers.HomeController" ("m3_zapletal.Eshop"). (122b2fdf)
+2022-01-08T13:57:41.4041637+01:00 8000000a-0000-fe00-b63f-84710c7967bb [INF] Entity Framework Core "5.0.12" initialized '"EshopDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "ServerVersion 8.0.26-mysql " (9958f5bb)
+2022-01-08T13:57:41.4060028+01:00 8000000a-0000-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM `Product` AS `p`" (0723d8ff)
+2022-01-08T13:57:41.4068106+01:00 8000000a-0000-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `p`.`ID`, `p`.`productCategory`, `p`.`productDesc`, `p`.`productImage`, `p`.`productName`, `p`.`productPrice`
+FROM `Product` AS `p`
+LIMIT @__p_1 OFFSET @__p_0" (0723d8ff)
+2022-01-08T13:57:41.4070465+01:00 8000000a-0000-fe00-b63f-84710c7967bb [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2022-01-08T13:57:41.4079945+01:00 8000000a-0000-fe00-b63f-84710c7967bb [INF] Accessing expired session, Key:"3435c0a3-487b-a099-a169-39ad568b3cd8" (08c5a9e7)
+2022-01-08T13:57:41.4084719+01:00 8000000a-0000-fe00-b63f-84710c7967bb [INF] Executed ViewResult - view "Index" executed in 1.4472ms. (f66409e9)
+2022-01-08T13:57:41.4085071+01:00 8000000a-0000-fe00-b63f-84710c7967bb [INF] Executed action "m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)" in 4.871ms (afa2e885)
+2022-01-08T13:57:41.4085353+01:00 8000000a-0000-fe00-b63f-84710c7967bb [INF] Executed endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (99874f2b)
+2022-01-08T13:57:41.4089660+01:00 8000000a-0000-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/?page=3 - - - 200 - text/html;+charset=utf-8 5.7428ms (791a596a)
+2022-01-08T13:57:41.4465146+01:00 80000056-0006-fc00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/Content/PagedList.css - - (ca22a1cb)
+2022-01-08T13:57:41.4475709+01:00 80000056-0006-fc00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/Content/PagedList.css - - - 404 - - 1.1168ms (791a596a)
+2022-01-08T13:57:45.1798525+01:00 80000075-0004-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/?category=cats - - (ca22a1cb)
+2022-01-08T13:57:45.1800726+01:00 80000075-0004-fe00-b63f-84710c7967bb [INF] Executing endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (500cc934)
+2022-01-08T13:57:45.1801470+01:00 80000075-0004-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(System.String, System.Nullable`1[System.Int32])" on controller "m3_zapletal.Eshop.Controllers.HomeController" ("m3_zapletal.Eshop"). (122b2fdf)
+2022-01-08T13:57:45.1806872+01:00 80000075-0004-fe00-b63f-84710c7967bb [INF] Entity Framework Core "5.0.12" initialized '"EshopDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "ServerVersion 8.0.26-mysql " (9958f5bb)
+2022-01-08T13:57:45.2118206+01:00 80000075-0004-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__category_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM `Product` AS `p`
+WHERE `p`.`productCategory` = @__category_0" (0723d8ff)
+2022-01-08T13:57:45.2154638+01:00 80000075-0004-fe00-b63f-84710c7967bb [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. (96eb03fe)
+2022-01-08T13:57:45.2178932+01:00 80000075-0004-fe00-b63f-84710c7967bb [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. (96eb03fe)
+2022-01-08T13:57:45.2206854+01:00 80000075-0004-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__category_0='?' (Size = 50), @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `p`.`ID`, `p`.`productCategory`, `p`.`productDesc`, `p`.`productImage`, `p`.`productName`, `p`.`productPrice`
+FROM `Product` AS `p`
+WHERE `p`.`productCategory` = @__category_0
+LIMIT @__p_2 OFFSET @__p_1" (0723d8ff)
+2022-01-08T13:57:45.2209076+01:00 80000075-0004-fe00-b63f-84710c7967bb [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2022-01-08T13:57:45.2214922+01:00 80000075-0004-fe00-b63f-84710c7967bb [INF] Accessing expired session, Key:"3435c0a3-487b-a099-a169-39ad568b3cd8" (08c5a9e7)
+2022-01-08T13:57:45.2222353+01:00 80000075-0004-fe00-b63f-84710c7967bb [INF] Executed ViewResult - view "Index" executed in 1.344ms. (f66409e9)
+2022-01-08T13:57:45.2222652+01:00 80000075-0004-fe00-b63f-84710c7967bb [INF] Executed action "m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)" in 42.0989ms (afa2e885)
+2022-01-08T13:57:45.2223079+01:00 80000075-0004-fe00-b63f-84710c7967bb [INF] Executed endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (99874f2b)
+2022-01-08T13:57:45.2228519+01:00 80000075-0004-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/?category=cats - - - 200 - text/html;+charset=utf-8 43.0092ms (791a596a)
+2022-01-08T13:57:45.2566979+01:00 80000037-0003-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/Content/PagedList.css - - (ca22a1cb)
+2022-01-08T13:57:45.2576336+01:00 80000037-0003-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/Content/PagedList.css - - - 404 - - 0.8860ms (791a596a)
+2022-01-08T13:57:46.6889577+01:00 80000077-0004-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/?page=2 - - (ca22a1cb)
+2022-01-08T13:57:46.6892418+01:00 80000077-0004-fe00-b63f-84710c7967bb [INF] Executing endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (500cc934)
+2022-01-08T13:57:46.6893901+01:00 80000077-0004-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(System.String, System.Nullable`1[System.Int32])" on controller "m3_zapletal.Eshop.Controllers.HomeController" ("m3_zapletal.Eshop"). (122b2fdf)
+2022-01-08T13:57:46.6898987+01:00 80000077-0004-fe00-b63f-84710c7967bb [INF] Entity Framework Core "5.0.12" initialized '"EshopDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "ServerVersion 8.0.26-mysql " (9958f5bb)
+2022-01-08T13:57:46.6922177+01:00 80000077-0004-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM `Product` AS `p`" (0723d8ff)
+2022-01-08T13:57:46.6945566+01:00 80000077-0004-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `p`.`ID`, `p`.`productCategory`, `p`.`productDesc`, `p`.`productImage`, `p`.`productName`, `p`.`productPrice`
+FROM `Product` AS `p`
+LIMIT @__p_0 OFFSET @__p_0" (0723d8ff)
+2022-01-08T13:57:46.6952486+01:00 80000077-0004-fe00-b63f-84710c7967bb [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2022-01-08T13:57:46.6968152+01:00 80000077-0004-fe00-b63f-84710c7967bb [INF] Accessing expired session, Key:"3435c0a3-487b-a099-a169-39ad568b3cd8" (08c5a9e7)
+2022-01-08T13:57:46.6977098+01:00 80000077-0004-fe00-b63f-84710c7967bb [INF] Executed ViewResult - view "Index" executed in 2.5196ms. (f66409e9)
+2022-01-08T13:57:46.6977783+01:00 80000077-0004-fe00-b63f-84710c7967bb [INF] Executed action "m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)" in 8.3444ms (afa2e885)
+2022-01-08T13:57:46.6978302+01:00 80000077-0004-fe00-b63f-84710c7967bb [INF] Executed endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (99874f2b)
+2022-01-08T13:57:46.6983084+01:00 80000077-0004-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/?page=2 - - - 200 - text/html;+charset=utf-8 9.3627ms (791a596a)
+2022-01-08T13:57:46.7271820+01:00 80000029-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/Content/PagedList.css - - (ca22a1cb)
+2022-01-08T13:57:46.7280715+01:00 80000029-0002-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/Content/PagedList.css - - - 404 - - 0.8297ms (791a596a)
+2022-01-08T13:58:05.2224374+01:00 80000058-0006-fc00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/?category=cats - - (ca22a1cb)
+2022-01-08T13:58:05.2226089+01:00 80000058-0006-fc00-b63f-84710c7967bb [INF] Executing endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (500cc934)
+2022-01-08T13:58:05.2226790+01:00 80000058-0006-fc00-b63f-84710c7967bb [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(System.String, System.Nullable`1[System.Int32])" on controller "m3_zapletal.Eshop.Controllers.HomeController" ("m3_zapletal.Eshop"). (122b2fdf)
+2022-01-08T13:58:05.2230881+01:00 80000058-0006-fc00-b63f-84710c7967bb [INF] Entity Framework Core "5.0.12" initialized '"EshopDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "ServerVersion 8.0.26-mysql " (9958f5bb)
+2022-01-08T13:58:05.2239156+01:00 80000058-0006-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__category_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM `Product` AS `p`
+WHERE `p`.`productCategory` = @__category_0" (0723d8ff)
+2022-01-08T13:58:05.2245503+01:00 80000058-0006-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__category_0='?' (Size = 50), @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `p`.`ID`, `p`.`productCategory`, `p`.`productDesc`, `p`.`productImage`, `p`.`productName`, `p`.`productPrice`
+FROM `Product` AS `p`
+WHERE `p`.`productCategory` = @__category_0
+LIMIT @__p_2 OFFSET @__p_1" (0723d8ff)
+2022-01-08T13:58:05.2247099+01:00 80000058-0006-fc00-b63f-84710c7967bb [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2022-01-08T13:58:05.2251428+01:00 80000058-0006-fc00-b63f-84710c7967bb [INF] Accessing expired session, Key:"3435c0a3-487b-a099-a169-39ad568b3cd8" (08c5a9e7)
+2022-01-08T13:58:05.2258913+01:00 80000058-0006-fc00-b63f-84710c7967bb [INF] Executed ViewResult - view "Index" executed in 1.1951ms. (f66409e9)
+2022-01-08T13:58:05.2261049+01:00 80000058-0006-fc00-b63f-84710c7967bb [INF] Executed action "m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)" in 3.3995ms (afa2e885)
+2022-01-08T13:58:05.2261557+01:00 80000058-0006-fc00-b63f-84710c7967bb [INF] Executed endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (99874f2b)
+2022-01-08T13:58:05.2265337+01:00 80000058-0006-fc00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/?category=cats - - - 200 - text/html;+charset=utf-8 4.0988ms (791a596a)
+2022-01-08T13:58:05.2635224+01:00 8000003b-0007-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/Content/PagedList.css - - (ca22a1cb)
+2022-01-08T13:58:05.2645813+01:00 8000003b-0007-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/Content/PagedList.css - - - 404 - - 1.0220ms (791a596a)
+2022-01-08T14:01:31.3772361+01:00 8000001c-0000-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/?page=2 - - (ca22a1cb)
+2022-01-08T14:01:31.3786009+01:00 8000001c-0000-ff00-b63f-84710c7967bb [INF] Executing endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (500cc934)
+2022-01-08T14:01:31.3809643+01:00 8000001c-0000-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(System.String, System.Nullable`1[System.Int32])" on controller "m3_zapletal.Eshop.Controllers.HomeController" ("m3_zapletal.Eshop"). (122b2fdf)
+2022-01-08T14:01:31.3814773+01:00 8000001c-0000-ff00-b63f-84710c7967bb [INF] Entity Framework Core "5.0.12" initialized '"EshopDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "ServerVersion 8.0.26-mysql " (9958f5bb)
+2022-01-08T14:01:31.3890920+01:00 8000001c-0000-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM `Product` AS `p`" (0723d8ff)
+2022-01-08T14:01:31.3898448+01:00 8000001c-0000-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `p`.`ID`, `p`.`productCategory`, `p`.`productDesc`, `p`.`productImage`, `p`.`productName`, `p`.`productPrice`
+FROM `Product` AS `p`
+LIMIT @__p_0 OFFSET @__p_0" (0723d8ff)
+2022-01-08T14:01:31.3900300+01:00 8000001c-0000-ff00-b63f-84710c7967bb [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2022-01-08T14:01:31.3903969+01:00 8000001c-0000-ff00-b63f-84710c7967bb [INF] Accessing expired session, Key:"3435c0a3-487b-a099-a169-39ad568b3cd8" (08c5a9e7)
+2022-01-08T14:01:31.3908432+01:00 8000001c-0000-ff00-b63f-84710c7967bb [INF] Executed ViewResult - view "Index" executed in 0.8466ms. (f66409e9)
+2022-01-08T14:01:31.3908995+01:00 8000001c-0000-ff00-b63f-84710c7967bb [INF] Executed action "m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)" in 9.8905ms (afa2e885)
+2022-01-08T14:01:31.3909179+01:00 8000001c-0000-ff00-b63f-84710c7967bb [INF] Executed endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (99874f2b)
+2022-01-08T14:01:31.3913790+01:00 8000001c-0000-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/?page=2 - - - 200 - text/html;+charset=utf-8 14.1795ms (791a596a)
+2022-01-08T14:01:31.4305525+01:00 8000002b-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/Content/PagedList.css - - (ca22a1cb)
+2022-01-08T14:01:31.4315184+01:00 8000002b-0002-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/Content/PagedList.css - - - 404 - - 0.8901ms (791a596a)
+2022-01-08T14:01:31.4324298+01:00 8000000e-0005-fc00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - (ca22a1cb)
+2022-01-08T14:01:31.4426289+01:00 8000001e-0000-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/js/Product.js - - (ca22a1cb)
+2022-01-08T14:01:31.4442836+01:00 8000001e-0000-ff00-b63f-84710c7967bb [INF] Sending file. Request path: '"/js/Product.js"'. Physical path: '"C:\Users\micha\Desktop\SchoolFolder\AP5PW\AP5TW\m3_zapletal.Eshop\wwwroot\js\Product.js"' (27b0a520)
+2022-01-08T14:01:31.4444422+01:00 8000001e-0000-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/js/Product.js - - - 0 766 application/javascript 2.1715ms (791a596a)
+2022-01-08T14:01:31.4444623+01:00 8000000e-0005-fc00-b63f-84710c7967bb [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"C:\Users\micha\Desktop\SchoolFolder\AP5PW\AP5TW\m3_zapletal.Eshop\wwwroot\js\site.js"' (27b0a520)
+2022-01-08T14:01:31.4445293+01:00 8000000e-0005-fc00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 0 230 application/javascript 12.1036ms (791a596a)
+2022-01-08T14:01:33.2848286+01:00 80000079-0004-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/?page=1 - - (ca22a1cb)
+2022-01-08T14:01:33.2850179+01:00 80000079-0004-fe00-b63f-84710c7967bb [INF] Executing endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (500cc934)
+2022-01-08T14:01:33.2850878+01:00 80000079-0004-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(System.String, System.Nullable`1[System.Int32])" on controller "m3_zapletal.Eshop.Controllers.HomeController" ("m3_zapletal.Eshop"). (122b2fdf)
+2022-01-08T14:01:33.2854867+01:00 80000079-0004-fe00-b63f-84710c7967bb [INF] Entity Framework Core "5.0.12" initialized '"EshopDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "ServerVersion 8.0.26-mysql " (9958f5bb)
+2022-01-08T14:01:33.2870951+01:00 80000079-0004-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM `Product` AS `p`" (0723d8ff)
+2022-01-08T14:01:33.2878029+01:00 80000079-0004-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `p`.`ID`, `p`.`productCategory`, `p`.`productDesc`, `p`.`productImage`, `p`.`productName`, `p`.`productPrice`
+FROM `Product` AS `p`
+LIMIT @__p_1 OFFSET @__p_0" (0723d8ff)
+2022-01-08T14:01:33.2879498+01:00 80000079-0004-fe00-b63f-84710c7967bb [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2022-01-08T14:01:33.2883006+01:00 80000079-0004-fe00-b63f-84710c7967bb [INF] Accessing expired session, Key:"3435c0a3-487b-a099-a169-39ad568b3cd8" (08c5a9e7)
+2022-01-08T14:01:33.2886348+01:00 80000079-0004-fe00-b63f-84710c7967bb [INF] Executed ViewResult - view "Index" executed in 0.6912ms. (f66409e9)
+2022-01-08T14:01:33.2886781+01:00 80000079-0004-fe00-b63f-84710c7967bb [INF] Executed action "m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)" in 3.564ms (afa2e885)
+2022-01-08T14:01:33.2933031+01:00 80000079-0004-fe00-b63f-84710c7967bb [INF] Executed endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (99874f2b)
+2022-01-08T14:01:33.2944990+01:00 80000079-0004-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/?page=1 - - - 200 - text/html;+charset=utf-8 9.6425ms (791a596a)
+2022-01-08T14:01:33.3270061+01:00 80000036-0001-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/Content/PagedList.css - - (ca22a1cb)
+2022-01-08T14:01:33.3304931+01:00 80000036-0001-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/Content/PagedList.css - - - 404 - - 3.1018ms (791a596a)
+2022-01-08T14:01:34.6174499+01:00 80000038-0001-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/?page=2 - - (ca22a1cb)
+2022-01-08T14:01:34.6176812+01:00 80000038-0001-ff00-b63f-84710c7967bb [INF] Executing endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (500cc934)
+2022-01-08T14:01:34.6177599+01:00 80000038-0001-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(System.String, System.Nullable`1[System.Int32])" on controller "m3_zapletal.Eshop.Controllers.HomeController" ("m3_zapletal.Eshop"). (122b2fdf)
+2022-01-08T14:01:34.6181801+01:00 80000038-0001-ff00-b63f-84710c7967bb [INF] Entity Framework Core "5.0.12" initialized '"EshopDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "ServerVersion 8.0.26-mysql " (9958f5bb)
+2022-01-08T14:01:34.6200872+01:00 80000038-0001-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM `Product` AS `p`" (0723d8ff)
+2022-01-08T14:01:34.6211100+01:00 80000038-0001-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `p`.`ID`, `p`.`productCategory`, `p`.`productDesc`, `p`.`productImage`, `p`.`productName`, `p`.`productPrice`
+FROM `Product` AS `p`
+LIMIT @__p_0 OFFSET @__p_0" (0723d8ff)
+2022-01-08T14:01:34.6213768+01:00 80000038-0001-ff00-b63f-84710c7967bb [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2022-01-08T14:01:34.6217048+01:00 80000038-0001-ff00-b63f-84710c7967bb [INF] Accessing expired session, Key:"3435c0a3-487b-a099-a169-39ad568b3cd8" (08c5a9e7)
+2022-01-08T14:01:34.6220114+01:00 80000038-0001-ff00-b63f-84710c7967bb [INF] Executed ViewResult - view "Index" executed in 0.6562ms. (f66409e9)
+2022-01-08T14:01:34.6220550+01:00 80000038-0001-ff00-b63f-84710c7967bb [INF] Executed action "m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)" in 4.2678ms (afa2e885)
+2022-01-08T14:01:34.6220757+01:00 80000038-0001-ff00-b63f-84710c7967bb [INF] Executed endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (99874f2b)
+2022-01-08T14:01:34.6229595+01:00 80000038-0001-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/?page=2 - - - 200 - text/html;+charset=utf-8 5.4107ms (791a596a)
+2022-01-08T14:01:34.6570975+01:00 8000005a-0006-fc00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/Content/PagedList.css - - (ca22a1cb)
+2022-01-08T14:01:34.6579527+01:00 8000005a-0006-fc00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/Content/PagedList.css - - - 404 - - 0.8445ms (791a596a)
+2022-01-08T14:01:36.9690025+01:00 8000005c-0006-fc00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/?page=3 - - (ca22a1cb)
+2022-01-08T14:01:36.9691671+01:00 8000005c-0006-fc00-b63f-84710c7967bb [INF] Executing endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (500cc934)
+2022-01-08T14:01:36.9692464+01:00 8000005c-0006-fc00-b63f-84710c7967bb [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(System.String, System.Nullable`1[System.Int32])" on controller "m3_zapletal.Eshop.Controllers.HomeController" ("m3_zapletal.Eshop"). (122b2fdf)
+2022-01-08T14:01:36.9698482+01:00 8000005c-0006-fc00-b63f-84710c7967bb [INF] Entity Framework Core "5.0.12" initialized '"EshopDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "ServerVersion 8.0.26-mysql " (9958f5bb)
+2022-01-08T14:01:36.9732851+01:00 8000005c-0006-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM `Product` AS `p`" (0723d8ff)
+2022-01-08T14:01:36.9748296+01:00 8000005c-0006-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `p`.`ID`, `p`.`productCategory`, `p`.`productDesc`, `p`.`productImage`, `p`.`productName`, `p`.`productPrice`
+FROM `Product` AS `p`
+LIMIT @__p_1 OFFSET @__p_0" (0723d8ff)
+2022-01-08T14:01:36.9751807+01:00 8000005c-0006-fc00-b63f-84710c7967bb [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2022-01-08T14:01:36.9756014+01:00 8000005c-0006-fc00-b63f-84710c7967bb [INF] Accessing expired session, Key:"3435c0a3-487b-a099-a169-39ad568b3cd8" (08c5a9e7)
+2022-01-08T14:01:36.9759892+01:00 8000005c-0006-fc00-b63f-84710c7967bb [INF] Executed ViewResult - view "Index" executed in 0.8004ms. (f66409e9)
+2022-01-08T14:01:36.9760201+01:00 8000005c-0006-fc00-b63f-84710c7967bb [INF] Executed action "m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)" in 6.7543ms (afa2e885)
+2022-01-08T14:01:36.9760423+01:00 8000005c-0006-fc00-b63f-84710c7967bb [INF] Executed endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (99874f2b)
+2022-01-08T14:01:36.9765347+01:00 8000005c-0006-fc00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/?page=3 - - - 200 - text/html;+charset=utf-8 7.5196ms (791a596a)
+2022-01-08T14:01:37.0069355+01:00 80000020-0000-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/Content/PagedList.css - - (ca22a1cb)
+2022-01-08T14:01:37.0078619+01:00 80000020-0000-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/Content/PagedList.css - - - 404 - - 0.8918ms (791a596a)
+2022-01-08T14:01:44.8443393+01:00 80000039-0007-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/?page=2 - - (ca22a1cb)
+2022-01-08T14:01:44.8445140+01:00 80000039-0007-fe00-b63f-84710c7967bb [INF] Executing endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (500cc934)
+2022-01-08T14:01:44.8446099+01:00 80000039-0007-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(System.String, System.Nullable`1[System.Int32])" on controller "m3_zapletal.Eshop.Controllers.HomeController" ("m3_zapletal.Eshop"). (122b2fdf)
+2022-01-08T14:01:44.8450964+01:00 80000039-0007-fe00-b63f-84710c7967bb [INF] Entity Framework Core "5.0.12" initialized '"EshopDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "ServerVersion 8.0.26-mysql " (9958f5bb)
+2022-01-08T14:01:44.8474014+01:00 80000039-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM `Product` AS `p`" (0723d8ff)
+2022-01-08T14:01:44.8483589+01:00 80000039-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `p`.`ID`, `p`.`productCategory`, `p`.`productDesc`, `p`.`productImage`, `p`.`productName`, `p`.`productPrice`
+FROM `Product` AS `p`
+LIMIT @__p_0 OFFSET @__p_0" (0723d8ff)
+2022-01-08T14:01:44.8485066+01:00 80000039-0007-fe00-b63f-84710c7967bb [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2022-01-08T14:01:44.8488186+01:00 80000039-0007-fe00-b63f-84710c7967bb [INF] Accessing expired session, Key:"3435c0a3-487b-a099-a169-39ad568b3cd8" (08c5a9e7)
+2022-01-08T14:01:44.8491413+01:00 80000039-0007-fe00-b63f-84710c7967bb [INF] Executed ViewResult - view "Index" executed in 0.6515ms. (f66409e9)
+2022-01-08T14:01:44.8492535+01:00 80000039-0007-fe00-b63f-84710c7967bb [INF] Executed action "m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)" in 4.6144ms (afa2e885)
+2022-01-08T14:01:44.8492802+01:00 80000039-0007-fe00-b63f-84710c7967bb [INF] Executed endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (99874f2b)
+2022-01-08T14:01:44.8495677+01:00 80000039-0007-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/?page=2 - - - 200 - text/html;+charset=utf-8 5.2211ms (791a596a)
+2022-01-08T14:01:44.8845212+01:00 8000002d-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/Content/PagedList.css - - (ca22a1cb)
+2022-01-08T14:01:44.8857028+01:00 8000002d-0002-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/Content/PagedList.css - - - 404 - - 1.1740ms (791a596a)
+2022-01-08T14:01:52.3564045+01:00 8000003b-0007-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/?page=3 - - (ca22a1cb)
+2022-01-08T14:01:52.3566684+01:00 8000003b-0007-fe00-b63f-84710c7967bb [INF] Executing endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (500cc934)
+2022-01-08T14:01:52.3567783+01:00 8000003b-0007-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(System.String, System.Nullable`1[System.Int32])" on controller "m3_zapletal.Eshop.Controllers.HomeController" ("m3_zapletal.Eshop"). (122b2fdf)
+2022-01-08T14:01:52.3573414+01:00 8000003b-0007-fe00-b63f-84710c7967bb [INF] Entity Framework Core "5.0.12" initialized '"EshopDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "ServerVersion 8.0.26-mysql " (9958f5bb)
+2022-01-08T14:01:52.3590743+01:00 8000003b-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM `Product` AS `p`" (0723d8ff)
+2022-01-08T14:01:52.3600556+01:00 8000003b-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `p`.`ID`, `p`.`productCategory`, `p`.`productDesc`, `p`.`productImage`, `p`.`productName`, `p`.`productPrice`
+FROM `Product` AS `p`
+LIMIT @__p_1 OFFSET @__p_0" (0723d8ff)
+2022-01-08T14:01:52.3604068+01:00 8000003b-0007-fe00-b63f-84710c7967bb [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2022-01-08T14:01:52.3612918+01:00 8000003b-0007-fe00-b63f-84710c7967bb [INF] Accessing expired session, Key:"3435c0a3-487b-a099-a169-39ad568b3cd8" (08c5a9e7)
+2022-01-08T14:01:52.3622129+01:00 8000003b-0007-fe00-b63f-84710c7967bb [INF] Executed ViewResult - view "Index" executed in 1.8191ms. (f66409e9)
+2022-01-08T14:01:52.3622715+01:00 8000003b-0007-fe00-b63f-84710c7967bb [INF] Executed action "m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)" in 5.467ms (afa2e885)
+2022-01-08T14:01:52.3622993+01:00 8000003b-0007-fe00-b63f-84710c7967bb [INF] Executed endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (99874f2b)
+2022-01-08T14:01:52.3628234+01:00 8000003b-0007-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/?page=3 - - - 200 - text/html;+charset=utf-8 6.4090ms (791a596a)
+2022-01-08T14:01:52.3956208+01:00 8000007b-0004-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/Content/PagedList.css - - (ca22a1cb)
+2022-01-08T14:01:52.3964531+01:00 8000007b-0004-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/Content/PagedList.css - - - 404 - - 0.8159ms (791a596a)
+2022-01-08T14:01:54.5124617+01:00 8000002f-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/?page=2 - - (ca22a1cb)
+2022-01-08T14:01:54.5126192+01:00 8000002f-0002-ff00-b63f-84710c7967bb [INF] Executing endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (500cc934)
+2022-01-08T14:01:54.5126849+01:00 8000002f-0002-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(System.String, System.Nullable`1[System.Int32])" on controller "m3_zapletal.Eshop.Controllers.HomeController" ("m3_zapletal.Eshop"). (122b2fdf)
+2022-01-08T14:01:54.5131215+01:00 8000002f-0002-ff00-b63f-84710c7967bb [INF] Entity Framework Core "5.0.12" initialized '"EshopDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "ServerVersion 8.0.26-mysql " (9958f5bb)
+2022-01-08T14:01:54.5150096+01:00 8000002f-0002-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM `Product` AS `p`" (0723d8ff)
+2022-01-08T14:01:54.5157613+01:00 8000002f-0002-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `p`.`ID`, `p`.`productCategory`, `p`.`productDesc`, `p`.`productImage`, `p`.`productName`, `p`.`productPrice`
+FROM `Product` AS `p`
+LIMIT @__p_0 OFFSET @__p_0" (0723d8ff)
+2022-01-08T14:01:54.5159226+01:00 8000002f-0002-ff00-b63f-84710c7967bb [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2022-01-08T14:01:54.5162389+01:00 8000002f-0002-ff00-b63f-84710c7967bb [INF] Accessing expired session, Key:"3435c0a3-487b-a099-a169-39ad568b3cd8" (08c5a9e7)
+2022-01-08T14:01:54.5166358+01:00 8000002f-0002-ff00-b63f-84710c7967bb [INF] Executed ViewResult - view "Index" executed in 0.7118ms. (f66409e9)
+2022-01-08T14:01:54.5166745+01:00 8000002f-0002-ff00-b63f-84710c7967bb [INF] Executed action "m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)" in 3.962ms (afa2e885)
+2022-01-08T14:01:54.5167060+01:00 8000002f-0002-ff00-b63f-84710c7967bb [INF] Executed endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (99874f2b)
+2022-01-08T14:01:54.5171825+01:00 8000002f-0002-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/?page=2 - - - 200 - text/html;+charset=utf-8 4.7211ms (791a596a)
+2022-01-08T14:01:54.5476561+01:00 80000010-0005-fc00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/Content/PagedList.css - - (ca22a1cb)
+2022-01-08T14:01:54.5492493+01:00 80000010-0005-fc00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/Content/PagedList.css - - - 404 - - 1.5801ms (791a596a)
+2022-01-08T14:01:56.2197960+01:00 80000039-0003-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/?page=1 - - (ca22a1cb)
+2022-01-08T14:01:56.2200684+01:00 80000039-0003-fe00-b63f-84710c7967bb [INF] Executing endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (500cc934)
+2022-01-08T14:01:56.2201753+01:00 80000039-0003-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(System.String, System.Nullable`1[System.Int32])" on controller "m3_zapletal.Eshop.Controllers.HomeController" ("m3_zapletal.Eshop"). (122b2fdf)
+2022-01-08T14:01:56.2208966+01:00 80000039-0003-fe00-b63f-84710c7967bb [INF] Entity Framework Core "5.0.12" initialized '"EshopDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "ServerVersion 8.0.26-mysql " (9958f5bb)
+2022-01-08T14:01:56.2228619+01:00 80000039-0003-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM `Product` AS `p`" (0723d8ff)
+2022-01-08T14:01:56.2236312+01:00 80000039-0003-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `p`.`ID`, `p`.`productCategory`, `p`.`productDesc`, `p`.`productImage`, `p`.`productName`, `p`.`productPrice`
+FROM `Product` AS `p`
+LIMIT @__p_1 OFFSET @__p_0" (0723d8ff)
+2022-01-08T14:01:56.2237627+01:00 80000039-0003-fe00-b63f-84710c7967bb [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2022-01-08T14:01:56.2240495+01:00 80000039-0003-fe00-b63f-84710c7967bb [INF] Accessing expired session, Key:"3435c0a3-487b-a099-a169-39ad568b3cd8" (08c5a9e7)
+2022-01-08T14:01:56.2244097+01:00 80000039-0003-fe00-b63f-84710c7967bb [INF] Executed ViewResult - view "Index" executed in 0.642ms. (f66409e9)
+2022-01-08T14:01:56.2244635+01:00 80000039-0003-fe00-b63f-84710c7967bb [INF] Executed action "m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)" in 4.2411ms (afa2e885)
+2022-01-08T14:01:56.2245172+01:00 80000039-0003-fe00-b63f-84710c7967bb [INF] Executed endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (99874f2b)
+2022-01-08T14:01:56.2250100+01:00 80000039-0003-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/?page=1 - - - 200 - text/html;+charset=utf-8 5.1858ms (791a596a)
+2022-01-08T14:01:56.2527899+01:00 8000005e-0006-fc00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/Content/PagedList.css - - (ca22a1cb)
+2022-01-08T14:01:56.2536494+01:00 8000005e-0006-fc00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/Content/PagedList.css - - - 404 - - 0.8529ms (791a596a)
+2022-01-08T14:03:17.2156094+01:00 8000007d-0004-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/?page=2 - - (ca22a1cb)
+2022-01-08T14:03:17.2158262+01:00 8000007d-0004-fe00-b63f-84710c7967bb [INF] Executing endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (500cc934)
+2022-01-08T14:03:17.2159424+01:00 8000007d-0004-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(System.String, System.Nullable`1[System.Int32])" on controller "m3_zapletal.Eshop.Controllers.HomeController" ("m3_zapletal.Eshop"). (122b2fdf)
+2022-01-08T14:03:17.2166319+01:00 8000007d-0004-fe00-b63f-84710c7967bb [INF] Entity Framework Core "5.0.12" initialized '"EshopDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "ServerVersion 8.0.26-mysql " (9958f5bb)
+2022-01-08T14:03:17.2181395+01:00 8000007d-0004-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM `Product` AS `p`" (0723d8ff)
+2022-01-08T14:03:17.2191992+01:00 8000007d-0004-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `p`.`ID`, `p`.`productCategory`, `p`.`productDesc`, `p`.`productImage`, `p`.`productName`, `p`.`productPrice`
+FROM `Product` AS `p`
+LIMIT @__p_0 OFFSET @__p_0" (0723d8ff)
+2022-01-08T14:03:17.2195501+01:00 8000007d-0004-fe00-b63f-84710c7967bb [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2022-01-08T14:03:17.2261562+01:00 8000007d-0004-fe00-b63f-84710c7967bb [INF] Accessing expired session, Key:"3435c0a3-487b-a099-a169-39ad568b3cd8" (08c5a9e7)
+2022-01-08T14:03:17.2322954+01:00 8000007d-0004-fe00-b63f-84710c7967bb [INF] Executed ViewResult - view "Index" executed in 12.8007ms. (f66409e9)
+2022-01-08T14:03:17.2324559+01:00 8000007d-0004-fe00-b63f-84710c7967bb [INF] Executed action "m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)" in 16.4682ms (afa2e885)
+2022-01-08T14:03:17.2325097+01:00 8000007d-0004-fe00-b63f-84710c7967bb [INF] Executed endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (99874f2b)
+2022-01-08T14:03:17.2341271+01:00 8000007d-0004-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/?page=2 - - - 200 - text/html;+charset=utf-8 18.3619ms (791a596a)
+2022-01-08T14:03:17.3341379+01:00 80000060-0006-fc00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/Content/PagedList.css - - (ca22a1cb)
+2022-01-08T14:03:17.3432486+01:00 80000060-0006-fc00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/Content/PagedList.css - - - 404 - - 9.0610ms (791a596a)
+2022-01-08T14:03:17.3630112+01:00 8000003d-0007-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/favicon.ico - - (ca22a1cb)
+2022-01-08T14:03:17.3636281+01:00 8000003d-0007-fe00-b63f-84710c7967bb [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\Users\micha\Desktop\SchoolFolder\AP5PW\AP5TW\m3_zapletal.Eshop\wwwroot\favicon.ico"' (27b0a520)
+2022-01-08T14:03:17.3638426+01:00 8000003d-0007-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/favicon.ico - - - 200 5430 image/x-icon 0.8338ms (791a596a)
+2022-01-08T14:03:18.7522285+01:00 80000031-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/?page=1 - - (ca22a1cb)
+2022-01-08T14:03:18.7524700+01:00 80000031-0002-ff00-b63f-84710c7967bb [INF] Executing endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (500cc934)
+2022-01-08T14:03:18.7528238+01:00 80000031-0002-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(System.String, System.Nullable`1[System.Int32])" on controller "m3_zapletal.Eshop.Controllers.HomeController" ("m3_zapletal.Eshop"). (122b2fdf)
+2022-01-08T14:03:18.7538565+01:00 80000031-0002-ff00-b63f-84710c7967bb [INF] Entity Framework Core "5.0.12" initialized '"EshopDbContext"' using provider '"Pomelo.EntityFrameworkCore.MySql"' with options: "ServerVersion 8.0.26-mysql " (9958f5bb)
+2022-01-08T14:03:18.7567562+01:00 80000031-0002-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM `Product` AS `p`" (0723d8ff)
+2022-01-08T14:03:18.7588719+01:00 80000031-0002-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT `p`.`ID`, `p`.`productCategory`, `p`.`productDesc`, `p`.`productImage`, `p`.`productName`, `p`.`productPrice`
+FROM `Product` AS `p`
+LIMIT @__p_1 OFFSET @__p_0" (0723d8ff)
+2022-01-08T14:03:18.7591001+01:00 80000031-0002-ff00-b63f-84710c7967bb [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2022-01-08T14:03:18.7594680+01:00 80000031-0002-ff00-b63f-84710c7967bb [INF] Accessing expired session, Key:"3435c0a3-487b-a099-a169-39ad568b3cd8" (08c5a9e7)
+2022-01-08T14:03:18.7598981+01:00 80000031-0002-ff00-b63f-84710c7967bb [INF] Executed ViewResult - view "Index" executed in 0.8174ms. (f66409e9)
+2022-01-08T14:03:18.7599400+01:00 80000031-0002-ff00-b63f-84710c7967bb [INF] Executed action "m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)" in 7.0702ms (afa2e885)
+2022-01-08T14:03:18.7599581+01:00 80000031-0002-ff00-b63f-84710c7967bb [INF] Executed endpoint '"m3_zapletal.Eshop.Controllers.HomeController.Index (m3_zapletal.Eshop)"' (99874f2b)
+2022-01-08T14:03:18.7603897+01:00 80000031-0002-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/?page=1 - - - 200 - text/html;+charset=utf-8 8.1425ms (791a596a)
+2022-01-08T14:03:18.8002711+01:00 80000022-0000-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44321/Content/PagedList.css - - (ca22a1cb)
+2022-01-08T14:03:18.8010159+01:00 80000022-0000-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44321/Content/PagedList.css - - - 404 - - 0.7208ms (791a596a)
